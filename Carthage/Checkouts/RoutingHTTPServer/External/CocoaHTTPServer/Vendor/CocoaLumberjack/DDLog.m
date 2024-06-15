@@ -1063,16 +1063,16 @@ static char *dd_str_copy(const char *str)
 	
 	dispatch_block_t block = ^{ @autoreleasepool {
 		
-        if (self->formatter != logFormatter)
+		if (formatter != logFormatter)
 		{
-            if ([self->formatter respondsToSelector:@selector(willRemoveFromLogger:)]) {
-                [self->formatter willRemoveFromLogger:self];
+			if ([formatter respondsToSelector:@selector(willRemoveFromLogger:)]) {
+				[formatter willRemoveFromLogger:self];
 			}
 			
-            self->formatter = logFormatter;
+			formatter = logFormatter;
 			
-            if ([self->formatter respondsToSelector:@selector(didAddToLogger:)]) {
-                [self->formatter didAddToLogger:self];
+			if ([formatter respondsToSelector:@selector(didAddToLogger:)]) {
+				[formatter didAddToLogger:self];
 			}
 		}
 	}};
@@ -1080,7 +1080,7 @@ static char *dd_str_copy(const char *str)
 	dispatch_queue_t globalLoggingQueue = [DDLog loggingQueue];
 	
 	dispatch_async(globalLoggingQueue, ^{
-        dispatch_async(self->loggerQueue, block);
+		dispatch_async(loggerQueue, block);
 	});
 }
 

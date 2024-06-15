@@ -181,16 +181,16 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN; // | HTTP_LOG_FLAG_TRACE;
 	
 	dispatch_source_set_event_handler(readSource, ^{
 		
-        HTTPLogTrace2(@"%@: eventBlock - fd[%i]", THIS_FILE, self->fileFD);
+		HTTPLogTrace2(@"%@: eventBlock - fd[%i]", THIS_FILE, fileFD);
 		
 		// Determine how much data we should read.
 		// 
 		// It is OK if we ask to read more bytes than exist in the file.
 		// It is NOT OK to over-allocate the buffer.
 		
-        unsigned long long _bytesAvailableOnFD = dispatch_source_get_data(self->readSource);
+		unsigned long long _bytesAvailableOnFD = dispatch_source_get_data(readSource);
 		
-        UInt64 _bytesLeftInFile = self->fileLength - self->readOffset;
+		UInt64 _bytesLeftInFile = fileLength - readOffset;
 		
 		NSUInteger bytesAvailableOnFD;
 		NSUInteger bytesLeftInFile;
@@ -198,7 +198,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN; // | HTTP_LOG_FLAG_TRACE;
 		bytesAvailableOnFD = (_bytesAvailableOnFD > NSUIntegerMax) ? NSUIntegerMax : (NSUInteger)_bytesAvailableOnFD;
 		bytesLeftInFile    = (_bytesLeftInFile    > NSUIntegerMax) ? NSUIntegerMax : (NSUInteger)_bytesLeftInFile;
 		
-        NSUInteger bytesLeftInRequest = self->readRequestLength - self->readBufferOffset;
+		NSUInteger bytesLeftInRequest = readRequestLength - readBufferOffset;
 		
 		NSUInteger bytesLeft = MIN(bytesLeftInRequest, bytesLeftInFile);
 		
@@ -207,12 +207,12 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN; // | HTTP_LOG_FLAG_TRACE;
 		// Make sure buffer is big enough for read request.
 		// Do not over-allocate.
 		
-        if (self->readBuffer == NULL || bytesToRead > (self->readBufferSize - self->readBufferOffset))
+		if (readBuffer == NULL || bytesToRead > (readBufferSize - readBufferOffset))
 		{
-            self->readBufferSize = bytesToRead;
-            self->readBuffer = reallocf(self->readBuffer, (size_t)bytesToRead);
+			readBufferSize = bytesToRead;
+			readBuffer = reallocf(readBuffer, (size_t)bytesToRead);
 			
-            if (self->readBuffer == NULL)
+			if (readBuffer == NULL)
 			{
 				HTTPLogError(@"%@[%p]: Unable to allocate buffer", THIS_FILE, self);
 				
@@ -227,19 +227,19 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN; // | HTTP_LOG_FLAG_TRACE;
 		
 		HTTPLogVerbose(@"%@[%p]: Attempting to read %lu bytes from file", THIS_FILE, self, (unsigned long)bytesToRead);
 		
-        ssize_t result = read(self->fileFD, self->readBuffer + self->readBufferOffset, (size_t)bytesToRead);
+		ssize_t result = read(fileFD, readBuffer + readBufferOffset, (size_t)bytesToRead);
 		
 		// Check the results
 		if (result < 0)
 		{
-            HTTPLogError(@"%@: Error(%i) reading file(%@)", THIS_FILE, errno, self->filePath);
+			HTTPLogError(@"%@: Error(%i) reading file(%@)", THIS_FILE, errno, filePath);
 			
 			[self pauseReadSource];
 			[self abort];
 		}
 		else if (result == 0)
 		{
-            HTTPLogError(@"%@: Read EOF on file(%@)", THIS_FILE, self->filePath);
+			HTTPLogError(@"%@: Read EOF on file(%@)", THIS_FILE, filePath);
 			
 			[self pauseReadSource];
 			[self abort];
@@ -248,8 +248,8 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN; // | HTTP_LOG_FLAG_TRACE;
 		{
 			HTTPLogVerbose(@"%@[%p]: Read %lu bytes from file", THIS_FILE, self, (unsigned long)result);
 			
-            self->readOffset += result;
-            self->readBufferOffset += result;
+			readOffset += result;
+			readBufferOffset += result;
 			
 			[self pauseReadSource];
 			[self processReadBuffer];

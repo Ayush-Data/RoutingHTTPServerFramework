@@ -174,7 +174,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_INFO; // | HTTP_LOG_FLAG_TRACE;
 	NSString *valueCopy = [value copy];
 	
 	dispatch_async(serverQueue, ^{
-        self->documentRoot = valueCopy;
+		documentRoot = valueCopy;
 	});
 	
 }
@@ -201,7 +201,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_INFO; // | HTTP_LOG_FLAG_TRACE;
 	HTTPLogTrace();
 	
 	dispatch_async(serverQueue, ^{
-        self->connectionClass = value;
+		connectionClass = value;
 	});
 }
 
@@ -224,7 +224,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_INFO; // | HTTP_LOG_FLAG_TRACE;
 	NSString *valueCopy = [value copy];
 	
 	dispatch_async(serverQueue, ^{
-        self->interface = valueCopy;
+		interface = valueCopy;
 	});
 	
 }
@@ -264,7 +264,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_INFO; // | HTTP_LOG_FLAG_TRACE;
 	HTTPLogTrace();
 	
 	dispatch_async(serverQueue, ^{
-        self->port = value;
+		port = value;
 	});
 }
 
@@ -290,7 +290,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_INFO; // | HTTP_LOG_FLAG_TRACE;
 	NSString *valueCopy = [value copy];
 	
 	dispatch_async(serverQueue, ^{
-        self->domain = valueCopy;
+		domain = valueCopy;
 	});
 	
 }
@@ -325,7 +325,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_INFO; // | HTTP_LOG_FLAG_TRACE;
 		{
 			
 			dispatch_block_t bonjourBlock = ^{
-                result = [[self->netService name] copy];
+				result = [[netService name] copy];
 			};
 			
 			[[self class] performBonjourBlock:bonjourBlock];
@@ -340,7 +340,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_INFO; // | HTTP_LOG_FLAG_TRACE;
 	NSString *valueCopy = [value copy];
 	
 	dispatch_async(serverQueue, ^{
-        self->name = valueCopy;
+		name = valueCopy;
 	});
 	
 }
@@ -365,7 +365,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_INFO; // | HTTP_LOG_FLAG_TRACE;
 	NSString *valueCopy = [value copy];
 	
 	dispatch_async(serverQueue, ^{
-        self->type = valueCopy;
+		type = valueCopy;
 	});
 	
 }
@@ -391,15 +391,15 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_INFO; // | HTTP_LOG_FLAG_TRACE;
 	
 	dispatch_async(serverQueue, ^{
 	
-        self->txtRecordDictionary = valueCopy;
+		txtRecordDictionary = valueCopy;
 		
 		// Update the txtRecord of the netService if it has already been published
-        if (self->netService)
+		if (netService)
 		{
-            NSNetService *theNetService = self->netService;
+			NSNetService *theNetService = netService;
 			NSData *txtRecordData = nil;
-            if (self->txtRecordDictionary)
-                txtRecordData = [NSNetService dataFromTXTRecordDictionary:self->txtRecordDictionary];
+			if (txtRecordDictionary)
+				txtRecordData = [NSNetService dataFromTXTRecordDictionary:txtRecordDictionary];
 			
 			dispatch_block_t bonjourBlock = ^{
 				[theNetService setTXTRecordData:txtRecordData];

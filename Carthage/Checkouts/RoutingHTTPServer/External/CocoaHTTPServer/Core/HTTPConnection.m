@@ -593,9 +593,9 @@ static NSMutableArray *recentNonces;
 {
 	dispatch_async(connectionQueue, ^{ @autoreleasepool {
 		
-        if (!self->started)
+		if (!started)
 		{
-            self->started = YES;
+			started = YES;
 			[self startConnection];
 		}
 	}});
@@ -611,7 +611,7 @@ static NSMutableArray *recentNonces;
 		
 		// Disconnect the socket.
 		// The socketDidDisconnect delegate method will handle everything else.
-        [self->asyncSocket disconnect];
+		[asyncSocket disconnect];
 	}});
 }
 
@@ -2524,25 +2524,25 @@ static NSMutableArray *recentNonces;
 	
 	dispatch_async(connectionQueue, ^{ @autoreleasepool {
 		
-        if (sender != self->httpResponse)
+		if (sender != httpResponse)
 		{
 			HTTPLogWarn(@"%@[%p]: %@ - Sender is not current httpResponse", THIS_FILE, self, THIS_METHOD);
 			return;
 		}
 		
-        if (!self->sentResponseHeaders)
+		if (!sentResponseHeaders)
 		{
 			[self sendResponseHeadersAndBody];
 		}
 		else
 		{
-            if (self->ranges == nil)
+			if (ranges == nil)
 			{
 				[self continueSendingStandardResponseBody];
 			}
 			else
 			{
-                if ([self->ranges count] == 1)
+				if ([ranges count] == 1)
 					[self continueSendingSingleRangeResponseBody];
 				else
 					[self continueSendingMultiRangeResponseBody];
@@ -2567,13 +2567,13 @@ static NSMutableArray *recentNonces;
 	
 	dispatch_async(connectionQueue, ^{ @autoreleasepool {
 		
-        if (sender != self->httpResponse)
+		if (sender != httpResponse)
 		{
 			HTTPLogWarn(@"%@[%p]: %@ - Sender is not current httpResponse", THIS_FILE, self, THIS_METHOD);
 			return;
 		}
 		
-        [self->asyncSocket disconnectAfterWriting];
+		[asyncSocket disconnectAfterWriting];
 	}});
 }
 
