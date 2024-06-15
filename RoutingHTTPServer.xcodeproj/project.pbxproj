@@ -1,0 +1,1079 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		270B11A91628E667005A82FA /* RoutingHTTPServerIOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 270B11AA1628E667005A82FA /* Build configuration list for PBXAggregateTarget "RoutingHTTPServerIOS" */;
+			buildPhases = (
+				270B11CC1628E9B0005A82FA /* Build Framework */,
+			);
+			dependencies = (
+				27073C4C162B78C5006BDF3A /* PBXTargetDependency */,
+				270B11CB1628E9A5005A82FA /* PBXTargetDependency */,
+			);
+			name = RoutingHTTPServerIOS;
+			productName = RoutingHTTPServerIOS;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		27073C0C162B76DB006BDF3A /* HTTPResponseProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 27073C00162B76DB006BDF3A /* HTTPResponseProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27073C0D162B76DB006BDF3A /* HTTPResponseProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 27073C00162B76DB006BDF3A /* HTTPResponseProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27073C0E162B76DB006BDF3A /* HTTPResponseProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C01162B76DB006BDF3A /* HTTPResponseProxy.m */; };
+		27073C0F162B76DB006BDF3A /* HTTPResponseProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C01162B76DB006BDF3A /* HTTPResponseProxy.m */; };
+		27073C10162B76DB006BDF3A /* Route.h in Headers */ = {isa = PBXBuildFile; fileRef = 27073C02162B76DB006BDF3A /* Route.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27073C11162B76DB006BDF3A /* Route.h in Headers */ = {isa = PBXBuildFile; fileRef = 27073C02162B76DB006BDF3A /* Route.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27073C12162B76DB006BDF3A /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C03162B76DB006BDF3A /* Route.m */; };
+		27073C13162B76DB006BDF3A /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C03162B76DB006BDF3A /* Route.m */; };
+		27073C14162B76DB006BDF3A /* RouteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 27073C04162B76DB006BDF3A /* RouteRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27073C15162B76DB006BDF3A /* RouteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 27073C04162B76DB006BDF3A /* RouteRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27073C16162B76DB006BDF3A /* RouteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C05162B76DB006BDF3A /* RouteRequest.m */; };
+		27073C17162B76DB006BDF3A /* RouteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C05162B76DB006BDF3A /* RouteRequest.m */; };
+		27073C18162B76DB006BDF3A /* RouteResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 27073C06162B76DB006BDF3A /* RouteResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27073C19162B76DB006BDF3A /* RouteResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 27073C06162B76DB006BDF3A /* RouteResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27073C1A162B76DB006BDF3A /* RouteResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C07162B76DB006BDF3A /* RouteResponse.m */; };
+		27073C1B162B76DB006BDF3A /* RouteResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C07162B76DB006BDF3A /* RouteResponse.m */; };
+		27073C1C162B76DB006BDF3A /* RoutingConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 27073C08162B76DB006BDF3A /* RoutingConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27073C1D162B76DB006BDF3A /* RoutingConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 27073C08162B76DB006BDF3A /* RoutingConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27073C1E162B76DB006BDF3A /* RoutingConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C09162B76DB006BDF3A /* RoutingConnection.m */; };
+		27073C1F162B76DB006BDF3A /* RoutingConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C09162B76DB006BDF3A /* RoutingConnection.m */; };
+		27073C20162B76DB006BDF3A /* RoutingHTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 27073C0A162B76DB006BDF3A /* RoutingHTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27073C21162B76DB006BDF3A /* RoutingHTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 27073C0A162B76DB006BDF3A /* RoutingHTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27073C22162B76DB006BDF3A /* RoutingHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C0B162B76DB006BDF3A /* RoutingHTTPServer.m */; };
+		27073C23162B76DB006BDF3A /* RoutingHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C0B162B76DB006BDF3A /* RoutingHTTPServer.m */; };
+		27073C4F162B79EE006BDF3A /* CocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27073C44162B78A3006BDF3A /* CocoaHTTPServer.framework */; };
+		27C38CD5162B986A006E831C /* License-RoutingHTTPServer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */; };
+		27C38CD6162B986A006E831C /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27C38CD3162B986A006E831C /* License.txt */; };
+		27C38CD7162B986A006E831C /* Version in Resources */ = {isa = PBXBuildFile; fileRef = 27C38CD4162B986A006E831C /* Version */; };
+		27C38CD8162B9873006E831C /* License-RoutingHTTPServer.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */; };
+		27C38CD9162B9873006E831C /* License.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD3162B986A006E831C /* License.txt */; };
+		27C38CDA162B9873006E831C /* Version in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD4162B986A006E831C /* Version */; };
+		7B37773A16F1644F0083CBB5 /* KSHTMLWriterFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B37773716F164300083CBB5 /* KSHTMLWriterFramework.framework */; };
+		7B37773C16F1649B0083CBB5 /* KSHTMLWriterFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B37773716F164300083CBB5 /* KSHTMLWriterFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D5FE35FE163AF8970090BB94 /* libCocoaHTTPServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27073C42162B78A3006BDF3A /* libCocoaHTTPServer.a */; };
+		D5FE3635163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */; };
+		D5FE3636163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */; };
+		D5FE363C163AF9E00090BB94 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE363B163AF9E00090BB94 /* SenTestingKit.framework */; };
+		D5FE363D163AF9E70090BB94 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE363B163AF9E00090BB94 /* SenTestingKit.framework */; };
+		D5FE363F163AFA250090BB94 /* libRoutingHTTPServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B11901628E5A8005A82FA /* libRoutingHTTPServer.a */; };
+		D5FE3641163AFA2F0090BB94 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE3640163AFA2F0090BB94 /* CFNetwork.framework */; };
+		D5FE3643163AFA340090BB94 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE3642163AFA340090BB94 /* Security.framework */; };
+		D5FE3647163AFAC20090BB94 /* RoutingHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B11B21628E676005A82FA /* RoutingHTTPServer.framework */; };
+		D5FE3648163AFACD0090BB94 /* CocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27073C44162B78A3006BDF3A /* CocoaHTTPServer.framework */; };
+		D5FE364B163AFB1B0090BB94 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE364A163AFB1B0090BB94 /* libxml2.dylib */; };
+		D5FE369C163AFD7E0090BB94 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE369B163AFD7E0090BB94 /* CoreGraphics.framework */; };
+		D5FE369E163AFD840090BB94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE369D163AFD840090BB94 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27073C41162B78A3006BDF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 270B11901628E5A8005A82FA;
+			remoteInfo = CocoaHTTPServerStaticIOS;
+		};
+		27073C43162B78A3006BDF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 270B11B21628E676005A82FA;
+			remoteInfo = CocoaHTTPServerOSX;
+		};
+		27073C49162B78C1006BDF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 270B118F1628E5A8005A82FA;
+			remoteInfo = CocoaHTTPServerStaticIOS;
+		};
+		27073C4B162B78C5006BDF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 270B11A91628E667005A82FA;
+			remoteInfo = CocoaHTTPServerIOS;
+		};
+		27073C4D162B78CA006BDF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 270B11B11628E676005A82FA;
+			remoteInfo = CocoaHTTPServerOSX;
+		};
+		270B11CA1628E9A5005A82FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 270B11871628E5A8005A82FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 270B118F1628E5A8005A82FA;
+			remoteInfo = RoutingHTTPServerStaticIOS;
+		};
+		7B37773216F164300083CBB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B37772A16F1642F0083CBB5 /* KSHTMLWriter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22352B9014C6FCB00031F5DD;
+			remoteInfo = KSHTMLWriter;
+		};
+		7B37773416F164300083CBB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B37772A16F1642F0083CBB5 /* KSHTMLWriter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22352BA414C6FCB00031F5DD;
+			remoteInfo = KSHTMLWriterTests;
+		};
+		7B37773616F164300083CBB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B37772A16F1642F0083CBB5 /* KSHTMLWriter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FC4242D15F57A0F001B9220;
+			remoteInfo = KSHTMLWriterFramework;
+		};
+		7B37773816F164360083CBB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B37772A16F1642F0083CBB5 /* KSHTMLWriter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FC4242C15F57A0F001B9220;
+			remoteInfo = KSHTMLWriterFramework;
+		};
+		D5FE35F8163AF86A0090BB94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D5FE353F163AF4240090BB94;
+			remoteInfo = CocoaHTTPServerIOSTests;
+		};
+		D5FE35FA163AF86A0090BB94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D5FE3557163AF4370090BB94;
+			remoteInfo = CocoaHTTPServerOSXTests;
+		};
+		D5FE3637163AF9BB0090BB94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 270B11871628E5A8005A82FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 270B118F1628E5A8005A82FA;
+			remoteInfo = RoutingHTTPServerStaticIOS;
+		};
+		D5FE3639163AF9BF0090BB94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 270B11871628E5A8005A82FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 270B11B11628E676005A82FA;
+			remoteInfo = RoutingHTTPServerOSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		270B118E1628E5A8005A82FA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${PRODUCT_NAME}Resources";
+			dstSubfolderSpec = 16;
+			files = (
+				27C38CD8162B9873006E831C /* License-RoutingHTTPServer.txt in CopyFiles */,
+				27C38CD9162B9873006E831C /* License.txt in CopyFiles */,
+				27C38CDA162B9873006E831C /* Version in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B37773B16F1648D0083CBB5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7B37773C16F1649B0083CBB5 /* KSHTMLWriterFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		27073C00162B76DB006BDF3A /* HTTPResponseProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponseProxy.h; sourceTree = "<group>"; };
+		27073C01162B76DB006BDF3A /* HTTPResponseProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPResponseProxy.m; sourceTree = "<group>"; };
+		27073C02162B76DB006BDF3A /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		27073C03162B76DB006BDF3A /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
+		27073C04162B76DB006BDF3A /* RouteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteRequest.h; sourceTree = "<group>"; };
+		27073C05162B76DB006BDF3A /* RouteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteRequest.m; sourceTree = "<group>"; };
+		27073C06162B76DB006BDF3A /* RouteResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteResponse.h; sourceTree = "<group>"; };
+		27073C07162B76DB006BDF3A /* RouteResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteResponse.m; sourceTree = "<group>"; };
+		27073C08162B76DB006BDF3A /* RoutingConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutingConnection.h; sourceTree = "<group>"; };
+		27073C09162B76DB006BDF3A /* RoutingConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutingConnection.m; sourceTree = "<group>"; };
+		27073C0A162B76DB006BDF3A /* RoutingHTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutingHTTPServer.h; sourceTree = "<group>"; };
+		27073C0B162B76DB006BDF3A /* RoutingHTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutingHTTPServer.m; sourceTree = "<group>"; };
+		27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaHTTPServer.xcodeproj; path = Frameworks/CocoaHTTPServer/CocoaHTTPServer.xcodeproj; sourceTree = "<group>"; };
+		270B11901628E5A8005A82FA /* libRoutingHTTPServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRoutingHTTPServer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		270B11B21628E676005A82FA /* RoutingHTTPServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RoutingHTTPServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "License-RoutingHTTPServer.txt"; sourceTree = "<group>"; };
+		27C38CD3162B986A006E831C /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		27C38CD4162B986A006E831C /* Version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Version; sourceTree = "<group>"; };
+		7B37772A16F1642F0083CBB5 /* KSHTMLWriter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KSHTMLWriter.xcodeproj; path = Frameworks/KSHTMLWriter/KSHTMLWriter.xcodeproj; sourceTree = "<group>"; };
+		D5FE3604163AF8F40090BB94 /* RoutingHTTPServerIOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutingHTTPServerIOSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5FE361D163AF8FE0090BB94 /* RoutingHTTPServerOSXTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutingHTTPServerOSXTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5FE3633163AF95F0090BB94 /* RoutingHTTPServerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutingHTTPServerTests.h; sourceTree = "<group>"; };
+		D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutingHTTPServerTests.m; sourceTree = "<group>"; };
+		D5FE363B163AF9E00090BB94 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D5FE3640163AFA2F0090BB94 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D5FE3642163AFA340090BB94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D5FE364A163AFB1B0090BB94 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		D5FE369B163AFD7E0090BB94 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D5FE369D163AFD840090BB94 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		270B118D1628E5A8005A82FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FE35FE163AF8970090BB94 /* libCocoaHTTPServer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270B11AE1628E676005A82FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B37773A16F1644F0083CBB5 /* KSHTMLWriterFramework.framework in Frameworks */,
+				27073C4F162B79EE006BDF3A /* CocoaHTTPServer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE3600163AF8F40090BB94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FE369E163AFD840090BB94 /* UIKit.framework in Frameworks */,
+				D5FE369C163AFD7E0090BB94 /* CoreGraphics.framework in Frameworks */,
+				D5FE364B163AFB1B0090BB94 /* libxml2.dylib in Frameworks */,
+				D5FE3643163AFA340090BB94 /* Security.framework in Frameworks */,
+				D5FE3641163AFA2F0090BB94 /* CFNetwork.framework in Frameworks */,
+				D5FE363F163AFA250090BB94 /* libRoutingHTTPServer.a in Frameworks */,
+				D5FE363C163AF9E00090BB94 /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE3619163AF8FE0090BB94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FE363D163AF9E70090BB94 /* SenTestingKit.framework in Frameworks */,
+				D5FE3647163AFAC20090BB94 /* RoutingHTTPServer.framework in Frameworks */,
+				D5FE3648163AFACD0090BB94 /* CocoaHTTPServer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27073BFF162B76DB006BDF3A /* RoutingHTTPServer */ = {
+			isa = PBXGroup;
+			children = (
+				27073C00162B76DB006BDF3A /* HTTPResponseProxy.h */,
+				27073C01162B76DB006BDF3A /* HTTPResponseProxy.m */,
+				27073C02162B76DB006BDF3A /* Route.h */,
+				27073C03162B76DB006BDF3A /* Route.m */,
+				27073C04162B76DB006BDF3A /* RouteRequest.h */,
+				27073C05162B76DB006BDF3A /* RouteRequest.m */,
+				27073C06162B76DB006BDF3A /* RouteResponse.h */,
+				27073C07162B76DB006BDF3A /* RouteResponse.m */,
+				27073C08162B76DB006BDF3A /* RoutingConnection.h */,
+				27073C09162B76DB006BDF3A /* RoutingConnection.m */,
+				27073C0A162B76DB006BDF3A /* RoutingHTTPServer.h */,
+				27073C0B162B76DB006BDF3A /* RoutingHTTPServer.m */,
+			);
+			name = RoutingHTTPServer;
+			path = Frameworks/RoutingHTTPServer/Source;
+			sourceTree = "<group>";
+		};
+		27073C25162B76F4006BDF3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */,
+				27C38CD3162B986A006E831C /* License.txt */,
+				27C38CD4162B986A006E831C /* Version */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		27073C30162B78A2006BDF3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27073C42162B78A3006BDF3A /* libCocoaHTTPServer.a */,
+				27073C44162B78A3006BDF3A /* CocoaHTTPServer.framework */,
+				D5FE35F9163AF86A0090BB94 /* CocoaHTTPServerIOSTests.octest */,
+				D5FE35FB163AF86A0090BB94 /* CocoaHTTPServerOSXTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		270B11851628E5A8005A82FA = {
+			isa = PBXGroup;
+			children = (
+				7B37772A16F1642F0083CBB5 /* KSHTMLWriter.xcodeproj */,
+				27073BFF162B76DB006BDF3A /* RoutingHTTPServer */,
+				D5FE3632163AF95F0090BB94 /* RoutingHTTPServerTests */,
+				27073C25162B76F4006BDF3A /* Resources */,
+				270B11921628E5A8005A82FA /* Frameworks */,
+				270B11911628E5A8005A82FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		270B11911628E5A8005A82FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				270B11901628E5A8005A82FA /* libRoutingHTTPServer.a */,
+				270B11B21628E676005A82FA /* RoutingHTTPServer.framework */,
+				D5FE3604163AF8F40090BB94 /* RoutingHTTPServerIOSTests.octest */,
+				D5FE361D163AF8FE0090BB94 /* RoutingHTTPServerOSXTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		270B11921628E5A8005A82FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5FE3644163AFA470090BB94 /* iOS-Testing */,
+				D5FE35FD163AF8760090BB94 /* Shared */,
+				D5FE363E163AF9EC0090BB94 /* Shared-Testing */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B37772B16F1642F0083CBB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B37773316F164300083CBB5 /* libKSHTMLWriter.a */,
+				7B37773516F164300083CBB5 /* KSHTMLWriterTests.octest */,
+				7B37773716F164300083CBB5 /* KSHTMLWriterFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5FE35FD163AF8760090BB94 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		D5FE3632163AF95F0090BB94 /* RoutingHTTPServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5FE3633163AF95F0090BB94 /* RoutingHTTPServerTests.h */,
+				D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */,
+			);
+			path = RoutingHTTPServerTests;
+			sourceTree = "<group>";
+		};
+		D5FE363E163AF9EC0090BB94 /* Shared-Testing */ = {
+			isa = PBXGroup;
+			children = (
+				D5FE363B163AF9E00090BB94 /* SenTestingKit.framework */,
+			);
+			name = "Shared-Testing";
+			sourceTree = "<group>";
+		};
+		D5FE3644163AFA470090BB94 /* iOS-Testing */ = {
+			isa = PBXGroup;
+			children = (
+				D5FE369D163AFD840090BB94 /* UIKit.framework */,
+				D5FE369B163AFD7E0090BB94 /* CoreGraphics.framework */,
+				D5FE364A163AFB1B0090BB94 /* libxml2.dylib */,
+				D5FE3642163AFA340090BB94 /* Security.framework */,
+				D5FE3640163AFA2F0090BB94 /* CFNetwork.framework */,
+			);
+			name = "iOS-Testing";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		270B11AF1628E676005A82FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27073C0D162B76DB006BDF3A /* HTTPResponseProxy.h in Headers */,
+				27073C11162B76DB006BDF3A /* Route.h in Headers */,
+				27073C15162B76DB006BDF3A /* RouteRequest.h in Headers */,
+				27073C19162B76DB006BDF3A /* RouteResponse.h in Headers */,
+				27073C1D162B76DB006BDF3A /* RoutingConnection.h in Headers */,
+				27073C21162B76DB006BDF3A /* RoutingHTTPServer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270B11CD1628E9D6005A82FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27073C0C162B76DB006BDF3A /* HTTPResponseProxy.h in Headers */,
+				27073C10162B76DB006BDF3A /* Route.h in Headers */,
+				27073C14162B76DB006BDF3A /* RouteRequest.h in Headers */,
+				27073C18162B76DB006BDF3A /* RouteResponse.h in Headers */,
+				27073C1C162B76DB006BDF3A /* RoutingConnection.h in Headers */,
+				27073C20162B76DB006BDF3A /* RoutingHTTPServer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		270B118F1628E5A8005A82FA /* RoutingHTTPServerStaticIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270B119E1628E5A8005A82FA /* Build configuration list for PBXNativeTarget "RoutingHTTPServerStaticIOS" */;
+			buildPhases = (
+				270B118C1628E5A8005A82FA /* Sources */,
+				270B118D1628E5A8005A82FA /* Frameworks */,
+				270B11CD1628E9D6005A82FA /* Headers */,
+				270B118E1628E5A8005A82FA /* CopyFiles */,
+				270B11CE1628E9DB005A82FA /* Prepare Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27073C4A162B78C1006BDF3A /* PBXTargetDependency */,
+			);
+			name = RoutingHTTPServerStaticIOS;
+			productName = RoutingHTTPServer;
+			productReference = 270B11901628E5A8005A82FA /* libRoutingHTTPServer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		270B11B11628E676005A82FA /* RoutingHTTPServerOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270B11C31628E676005A82FA /* Build configuration list for PBXNativeTarget "RoutingHTTPServerOSX" */;
+			buildPhases = (
+				270B11AD1628E676005A82FA /* Sources */,
+				270B11AE1628E676005A82FA /* Frameworks */,
+				270B11AF1628E676005A82FA /* Headers */,
+				270B11B01628E676005A82FA /* Resources */,
+				7B37773B16F1648D0083CBB5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B37773916F164360083CBB5 /* PBXTargetDependency */,
+				27073C4E162B78CA006BDF3A /* PBXTargetDependency */,
+			);
+			name = RoutingHTTPServerOSX;
+			productName = RoutingHTTPServerOSX;
+			productReference = 270B11B21628E676005A82FA /* RoutingHTTPServer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D5FE3603163AF8F40090BB94 /* RoutingHTTPServerIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5FE3615163AF8F40090BB94 /* Build configuration list for PBXNativeTarget "RoutingHTTPServerIOSTests" */;
+			buildPhases = (
+				D5FE35FF163AF8F40090BB94 /* Sources */,
+				D5FE3600163AF8F40090BB94 /* Frameworks */,
+				D5FE3601163AF8F40090BB94 /* Resources */,
+				D5FE3602163AF8F40090BB94 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5FE3638163AF9BB0090BB94 /* PBXTargetDependency */,
+			);
+			name = RoutingHTTPServerIOSTests;
+			productName = RoutingHTTPServerIOSTests;
+			productReference = D5FE3604163AF8F40090BB94 /* RoutingHTTPServerIOSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D5FE361C163AF8FE0090BB94 /* RoutingHTTPServerOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5FE362F163AF8FF0090BB94 /* Build configuration list for PBXNativeTarget "RoutingHTTPServerOSXTests" */;
+			buildPhases = (
+				D5FE3618163AF8FE0090BB94 /* Sources */,
+				D5FE3619163AF8FE0090BB94 /* Frameworks */,
+				D5FE361A163AF8FE0090BB94 /* Resources */,
+				D5FE361B163AF8FE0090BB94 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5FE363A163AF9BF0090BB94 /* PBXTargetDependency */,
+			);
+			name = RoutingHTTPServerOSXTests;
+			productName = RoutingHTTPServerOSXTests;
+			productReference = D5FE361D163AF8FE0090BB94 /* RoutingHTTPServerOSXTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		270B11871628E5A8005A82FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1540;
+				ORGANIZATIONNAME = "ASE Group";
+			};
+			buildConfigurationList = 270B118A1628E5A8005A82FA /* Build configuration list for PBXProject "RoutingHTTPServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 270B11851628E5A8005A82FA;
+			productRefGroup = 270B11911628E5A8005A82FA /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 27073C30162B78A2006BDF3A /* Products */;
+					ProjectRef = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
+				},
+				{
+					ProductGroup = 7B37772B16F1642F0083CBB5 /* Products */;
+					ProjectRef = 7B37772A16F1642F0083CBB5 /* KSHTMLWriter.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				270B118F1628E5A8005A82FA /* RoutingHTTPServerStaticIOS */,
+				270B11A91628E667005A82FA /* RoutingHTTPServerIOS */,
+				270B11B11628E676005A82FA /* RoutingHTTPServerOSX */,
+				D5FE3603163AF8F40090BB94 /* RoutingHTTPServerIOSTests */,
+				D5FE361C163AF8FE0090BB94 /* RoutingHTTPServerOSXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		27073C42162B78A3006BDF3A /* libCocoaHTTPServer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaHTTPServer.a;
+			remoteRef = 27073C41162B78A3006BDF3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27073C44162B78A3006BDF3A /* CocoaHTTPServer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaHTTPServer.framework;
+			remoteRef = 27073C43162B78A3006BDF3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B37773316F164300083CBB5 /* libKSHTMLWriter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKSHTMLWriter.a;
+			remoteRef = 7B37773216F164300083CBB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B37773516F164300083CBB5 /* KSHTMLWriterTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KSHTMLWriterTests.octest;
+			remoteRef = 7B37773416F164300083CBB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B37773716F164300083CBB5 /* KSHTMLWriterFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KSHTMLWriterFramework.framework;
+			remoteRef = 7B37773616F164300083CBB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D5FE35F9163AF86A0090BB94 /* CocoaHTTPServerIOSTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CocoaHTTPServerIOSTests.octest;
+			remoteRef = D5FE35F8163AF86A0090BB94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D5FE35FB163AF86A0090BB94 /* CocoaHTTPServerOSXTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CocoaHTTPServerOSXTests.octest;
+			remoteRef = D5FE35FA163AF86A0090BB94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		270B11B01628E676005A82FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C38CD5162B986A006E831C /* License-RoutingHTTPServer.txt in Resources */,
+				27C38CD6162B986A006E831C /* License.txt in Resources */,
+				27C38CD7162B986A006E831C /* Version in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE3601163AF8F40090BB94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE361A163AF8FE0090BB94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		270B11CC1628E9B0005A82FA /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nlipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/${FRAMEWORK_VERSION}/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/${FRAMEWORK_VERSION}/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/${FRAMEWORK_VERSION}/${SF_TARGET_NAME}\"\n";
+		};
+		270B11CE1628E9DB005A82FA /* Prepare Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Resources\"\n\n# Link the \"Current\" version to \"${FRAMEWORK_VERSION}\"\n/bin/ln -sfh \"${FRAMEWORK_VERSION}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Resources\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\n\n/bin/cp -a \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}Resources/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Resources\"\n";
+		};
+		D5FE3602163AF8F40090BB94 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		D5FE361B163AF8FE0090BB94 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		270B118C1628E5A8005A82FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27073C0E162B76DB006BDF3A /* HTTPResponseProxy.m in Sources */,
+				27073C12162B76DB006BDF3A /* Route.m in Sources */,
+				27073C16162B76DB006BDF3A /* RouteRequest.m in Sources */,
+				27073C1A162B76DB006BDF3A /* RouteResponse.m in Sources */,
+				27073C1E162B76DB006BDF3A /* RoutingConnection.m in Sources */,
+				27073C22162B76DB006BDF3A /* RoutingHTTPServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270B11AD1628E676005A82FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27073C0F162B76DB006BDF3A /* HTTPResponseProxy.m in Sources */,
+				27073C13162B76DB006BDF3A /* Route.m in Sources */,
+				27073C17162B76DB006BDF3A /* RouteRequest.m in Sources */,
+				27073C1B162B76DB006BDF3A /* RouteResponse.m in Sources */,
+				27073C1F162B76DB006BDF3A /* RoutingConnection.m in Sources */,
+				27073C23162B76DB006BDF3A /* RoutingHTTPServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE35FF163AF8F40090BB94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FE3635163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE3618163AF8FE0090BB94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FE3636163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27073C4A162B78C1006BDF3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaHTTPServerStaticIOS;
+			targetProxy = 27073C49162B78C1006BDF3A /* PBXContainerItemProxy */;
+		};
+		27073C4C162B78C5006BDF3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaHTTPServerIOS;
+			targetProxy = 27073C4B162B78C5006BDF3A /* PBXContainerItemProxy */;
+		};
+		27073C4E162B78CA006BDF3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaHTTPServerOSX;
+			targetProxy = 27073C4D162B78CA006BDF3A /* PBXContainerItemProxy */;
+		};
+		270B11CB1628E9A5005A82FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 270B118F1628E5A8005A82FA /* RoutingHTTPServerStaticIOS */;
+			targetProxy = 270B11CA1628E9A5005A82FA /* PBXContainerItemProxy */;
+		};
+		7B37773916F164360083CBB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KSHTMLWriterFramework;
+			targetProxy = 7B37773816F164360083CBB5 /* PBXContainerItemProxy */;
+		};
+		D5FE3638163AF9BB0090BB94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 270B118F1628E5A8005A82FA /* RoutingHTTPServerStaticIOS */;
+			targetProxy = D5FE3637163AF9BB0090BB94 /* PBXContainerItemProxy */;
+		};
+		D5FE363A163AF9BF0090BB94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 270B11B11628E676005A82FA /* RoutingHTTPServerOSX */;
+			targetProxy = D5FE3639163AF9BF0090BB94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		270B119C1628E5A8005A82FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(PROJECT_NAME)-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		270B119D1628E5A8005A82FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(PROJECT_NAME)-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		270B119F1628E5A8005A82FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME)PrivateHeaders";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.agilesoftwareengineering.${PRODUCT_NAME:rfc1034identifier}";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME)Headers";
+			};
+			name = Debug;
+		};
+		270B11A01628E5A8005A82FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME)PrivateHeaders";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.agilesoftwareengineering.${PRODUCT_NAME:rfc1034identifier}";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME)Headers";
+			};
+			name = Release;
+		};
+		270B11AB1628E667005A82FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.agilesoftwareengineering.${PRODUCT_NAME:rfc1034identifier}";
+			};
+			name = Debug;
+		};
+		270B11AC1628E667005A82FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.agilesoftwareengineering.${PRODUCT_NAME:rfc1034identifier}";
+			};
+			name = Release;
+		};
+		270B11C41628E676005A82FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-sub_umbrella",
+					CocoaHttpServer,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.agilesoftwareengineering.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		270B11C51628E676005A82FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-sub_umbrella",
+					CocoaHttpServer,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.agilesoftwareengineering.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		D5FE3616163AF8F40090BB94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.agilesoftwareengineering.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D5FE3617163AF8F40090BB94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.agilesoftwareengineering.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		D5FE3630163AF8FF0090BB94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.agilesoftwareengineering.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D5FE3631163AF8FF0090BB94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.agilesoftwareengineering.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		270B118A1628E5A8005A82FA /* Build configuration list for PBXProject "RoutingHTTPServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270B119C1628E5A8005A82FA /* Debug */,
+				270B119D1628E5A8005A82FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		270B119E1628E5A8005A82FA /* Build configuration list for PBXNativeTarget "RoutingHTTPServerStaticIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270B119F1628E5A8005A82FA /* Debug */,
+				270B11A01628E5A8005A82FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		270B11AA1628E667005A82FA /* Build configuration list for PBXAggregateTarget "RoutingHTTPServerIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270B11AB1628E667005A82FA /* Debug */,
+				270B11AC1628E667005A82FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		270B11C31628E676005A82FA /* Build configuration list for PBXNativeTarget "RoutingHTTPServerOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270B11C41628E676005A82FA /* Debug */,
+				270B11C51628E676005A82FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5FE3615163AF8F40090BB94 /* Build configuration list for PBXNativeTarget "RoutingHTTPServerIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5FE3616163AF8F40090BB94 /* Debug */,
+				D5FE3617163AF8F40090BB94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5FE362F163AF8FF0090BB94 /* Build configuration list for PBXNativeTarget "RoutingHTTPServerOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5FE3630163AF8FF0090BB94 /* Debug */,
+				D5FE3631163AF8FF0090BB94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 270B11871628E5A8005A82FA /* Project object */;
+}

@@ -26,6 +26,9 @@ xcuserdata
 *.moved-aside
 *.xcuserstate
 *.xcscmblueprint
+*.xcworkspace
+!default.xcworkspace
+profile
 
 ## Obj-C/Swift specific
 *.hmap
@@ -53,3 +56,9 @@ WebDriverAgentRunner-Runner.app/
 
 # Ruby
 Gemfile.lock
+
+# Mac OS X
+.DS_Store
+
+# Rakefile.config
+Rakefile.config
